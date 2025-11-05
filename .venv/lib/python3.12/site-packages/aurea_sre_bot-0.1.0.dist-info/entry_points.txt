@@ -1,0 +1,2 @@
+[console_scripts]
+aurea-sre = bot.main:run

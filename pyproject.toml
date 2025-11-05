@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aurea-sre-bot"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["requests", "PyYAML", "rich"]
+
+[project.scripts]
+aurea-sre = "bot.main:run"
+
+[tool.setuptools]
+packages = ["bot"]

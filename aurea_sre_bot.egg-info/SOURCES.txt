@@ -1,0 +1,10 @@
+pyproject.toml
+aurea_sre_bot.egg-info/PKG-INFO
+aurea_sre_bot.egg-info/SOURCES.txt
+aurea_sre_bot.egg-info/dependency_links.txt
+aurea_sre_bot.egg-info/entry_points.txt
+aurea_sre_bot.egg-info/requires.txt
+aurea_sre_bot.egg-info/top_level.txt
+bot/__init__.py
+bot/dbcheck.py
+bot/main.py

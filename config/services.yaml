@@ -1,0 +1,18 @@
+services:
+  backend:
+    url: "https://dils-wallet-production.up.railway.app"
+    health_paths: ["/healthz", "/docs"]
+    method: GET
+    railway_service: "dils-wallet"
+    required_env:
+      - "DATABASE_URL"
+      - "OPENAI_API_KEY"
+      - "JWT_SECRET"
+    db_url_key: "DATABASE_URL"
+
+  client:
+    url: "https://aurea-gold-client-production.up.railway.app"
+    health_paths: ["/", "/index.html"]
+    railway_service: "aurea-gold-client"
+    required_env:
+      - "VITE_API_BASE"

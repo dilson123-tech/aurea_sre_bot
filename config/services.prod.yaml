@@ -1,0 +1,11 @@
+services:
+  - name: backend
+    base_url: https://dils-wallet-production.up.railway.app
+    health_path: /healthz
+    health_method: GET
+    expect_status: 200
+  - name: client
+    base_url: https://aurea-gold-client-production.up.railway.app
+    health_path: /
+    health_method: HEAD
+    expect_status: 200
