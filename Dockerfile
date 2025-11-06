@@ -10,7 +10,7 @@ WORKDIR /app
 COPY . /app
 
 # Instala o bot localmente
-RUN pip install -e .
+RUN pip install -e . && pip install "psycopg[binary]==3.2.*"
 
 # Comando de start padrão
 CMD ["bash", "scripts/sre-cron.sh"]
